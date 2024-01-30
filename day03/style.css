@@ -1,0 +1,196 @@
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #fff;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    background-color: #272C34;
+    border-radius: 8px;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    animation: 4s circle-animation infinite;
+    opacity: 1;
+}
+
+@keyframes circle-animation{
+    0%{
+        opacity: 0;
+    }
+
+    30%{
+        opacity: 1;
+    }
+
+    85%{
+        opacity: 1;
+    }
+
+    90%{
+        opacity: 0.8;
+    }
+
+    100%{
+        opacity: 0;
+    }
+
+
+}
+
+.sun {
+    height: 40px;
+    width: 40px;
+    top: -100px;
+    right: 38px;
+    border-radius: 50%;
+    background: #FFEF00;
+    position: relative;
+    transform-origin: 320% 100%;
+    animation: 4s ease-out sun-animation infinite;
+}
+
+@keyframes sun-animation {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(45deg);
+    }
+
+    70%{
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+
+.sky {
+    background-color: #7ad9f6;
+    width: 200px;
+    height: 200px;
+}
+
+.sand{
+    background-color: #F0DE75;
+    width: 208px;
+    height: 66px;
+    position: absolute;
+    border-style: none;
+    bottom: 0px;
+}
+
+.piramide{
+    display: flex; position: absolute; bottom: 66px; left: 50px;
+}
+
+ .piramide-left {
+    background-color: #F1F0F0; width: 50px; height: 50px; clip-path: polygon(0% 100%, 100% 100%, 80% 0%); left: 10px; position: relative;
+    animation: 4s ease-out sombra-piramide-left infinite;
+
+}
+
+.piramide-right {
+    background: #aaabac; 
+    width: 50px; 
+    height: 50px; 
+    clip-path: polygon(30% 100%, 100% 100%, 10% 0%); 
+    position: relative; 
+    right: 5px;
+    animation: 4s ease-out sombra-piramide-right infinite;
+} 
+
+.piramide-sombra{
+    z-index: 1;
+    position: absolute;
+    top: 134px;
+    height: 80px;
+    width: 200px;
+    background: #8585858a;
+    clip-path: polygon(200% 0%, 55% 0, 72% 0);
+    animation: sombrachao-piramide ease-in-out 4s infinite;
+
+
+}
+ 
+ @keyframes sombrachao-piramide{
+    0% {
+        clip-path: polygon(200% 0%, 55% 0, 72% 0);
+    }
+
+    50%{
+        clip-path: polygon(150% 50%, 30% 0, 72% 0);
+       }
+
+    70%{
+        opacity: 0.7;
+        clip-path: polygon(150% 50%, 30% 0, 72% 0);
+    }
+
+    100%{
+        opacity: 0.3;
+        clip-path: polygon(-500% 100%, 30% 0, 55% 0);
+    }
+	
+}
+
+@keyframes sombra-piramide-right {
+    0% {
+        background: #aaabac;
+      }
+        
+    30% {
+        background: #cac9c9;
+    }
+        
+    70% {
+        background: #e6e5e5;
+     }
+    
+    100% {
+        background: #F1F0F0;
+    }
+}
+
+@keyframes sombra-piramide-left {
+    0% {
+        background: #F1F0F0;;
+      }
+        
+    80% {
+        background: #F1F0F0;;
+    }
+        
+    90% {
+        background: #d4d4d4;
+     }
+    
+    100% {
+        background: #aaabac; 
+    }
+}
