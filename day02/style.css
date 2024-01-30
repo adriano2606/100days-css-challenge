@@ -1,0 +1,201 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.frame {
+position: absolute;
+top: 50%;
+left: 50%;
+width: 400px;
+height: 400px;
+margin-top: -200px;
+margin-left: -200px;
+border-radius: 2px;
+box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+overflow: hidden;
+background: #fff;
+color: #333;
+font-family: 'Open Sans', Helvetica, sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+border-radius: 10px;
+background-color: #FF3CAC;
+background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+background-position: left;
+background-size: 300%;
+
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.center :nth-child(1), .center :nth-child(2)  {
+    margin-bottom: 15px;
+}
+
+.line1, .line2, .line3{
+    width: 101px;
+    height: 11px;
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: -1px 5px 9px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 5px 9px -4px rgba(0,0,0,0.75);
+    box-shadow: -1px 5px 9px -4px rgba(0,0,0,0.75);
+}
+
+.center:hover{
+    cursor: pointer; 
+}
+
+/* 1st step animation -- START */
+@keyframes line1animation {
+    0%   {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(26px);
+    }
+
+    100% {
+        transform: translateY(26px) rotate(45deg);
+    }
+
+  }
+
+.line1animation {
+    animation: line1animation 0.5s forwards;
+}
+
+@keyframes line2animation {
+    0%   {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+  }
+
+.line2animation {
+    animation: line2animation 0.5s forwards;
+}
+
+@keyframes line3animation {
+    0%   {
+        transform: translateY(-0px);
+    }
+
+    50% {
+        transform: translateY(-26px);
+
+    }
+
+    100% {
+        transform: translateY(-26px) rotate(140deg);
+    }
+  }
+
+.line3animation {
+    animation: line3animation 0.5s forwards;
+}
+/* 1st step animation -- END */
+
+/* 2nd step animation -- START */
+
+@keyframes line1animation-revert{
+
+    0%   {
+        transform: translateY(26px) rotate(45deg);
+    }
+
+    50% {
+        transform: translateY(26px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+.line1animation-revert{
+    animation: line1animation-revert 0.5s forwards;
+}
+
+@keyframes line2animation-revert{
+
+    0%   {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+.line2animation-revert{
+    animation: line2animation-revert 0.5s forwards;
+}
+
+@keyframes line3animation-revert {
+    0%   {
+        transform: translateY(-26px) rotate(140deg);
+    }
+
+    50% {
+        transform: translateY(-26px);
+
+    }
+
+    100% {
+        transform: translateY(-0px);
+    }
+  }
+
+.line3animation-revert {
+    animation: line3animation-revert 0.5s forwards;
+}
+
+/* 2nd step animation -- END */
+
+/* Frame animation --- START */
+
+@keyframes frame-animation {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+.frame-animation{
+    animation: frame-animation 500ms ease-in-out forwards;
+} 
+
+@keyframes frame-animation-revert {
+    0% {
+        background-position: right;
+    }
+
+    100% {
+        background-position: left;
+
+    }
+}
+
+.frame-animation-revert{
+    animation: frame-animation-revert 500ms ease-in-out forwards;
+} 
+
+/* Frame animation -- END */
+
