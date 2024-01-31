@@ -1,0 +1,103 @@
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #fff;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    background-color: #e56262;
+    border-radius: 8px;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.circle {
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 6px 7px 10px -3px rgba(0,0,0,0.4);
+}
+
+.big{
+    width: 100px;
+    height: 100px;
+    animation: animacao1 2s ease-out alternate infinite;
+}
+
+  .medium{
+    width: 70px;
+    height: 70px;
+    animation: animacao2 2s ease-out alternate infinite ;
+}
+ 
+ .small{
+    width: 40px;
+    height: 40px;
+    animation: animacao3 2s ease-out alternate infinite ;
+}   
+
+@keyframes animacao1 {
+    0%{
+        transform: scale(0);
+    }
+
+    40%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes animacao2 {
+    0%{
+        transform: scale(0);
+    }
+
+    20%{
+        transform: scale(0);
+    }
+
+    60%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+@keyframes animacao3 {
+    0%{
+        transform: scale(0);
+    }
+
+    40%{
+        transform: scale(0);
+    }
+
+    80%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
