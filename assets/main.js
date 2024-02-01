@@ -4,8 +4,8 @@ let appSection = document.getElementById('app')
 
 for(let i = 1; i <= numProjec; i++){
 
-    function callTitle() {
-        return fetch(`https://adriano2606.github.io/100days-css-challenge/day0${i}`) 
+    async function callTitle() {
+        return await fetch(`https://adriano2606.github.io/100days-css-challenge/day0${i}`) 
         .then(response => {return response.text()})
         .then(html => {
             let parser = new DOMParser();

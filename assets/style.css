@@ -52,7 +52,7 @@
 
  .img{
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 2rem;
     border-radius: 8px;
     object-fit: contain;
 } 
@@ -100,17 +100,5 @@
         }
     }
 
-@media screen and (min-width: 1400px) {
-        .app {
-            display: flex;
-            flex-wrap: wrap;
-            width: 90%;
-            margin: 5rem auto;
-            }
-        
-            .card{
-                width: calc(20% - 8rem);
-                margin: 1.5rem 4rem;
-            }
-        }
+
  
