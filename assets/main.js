@@ -2,6 +2,12 @@
 let totalProjects = 4;
 let appSection = document.getElementById('app')
 
+function contaProjeto(){
+    let total = 1;
+
+    fetch(`https://adriano2606.github.io/100days-css-challenge/day0${total}`).then(response.status)
+}
+
 async function createCards() {
     for (let i = 1; i <= totalProjects; i++) {
         let dom = await fetch(`https://adriano2606.github.io/100days-css-challenge/day0${i}`)

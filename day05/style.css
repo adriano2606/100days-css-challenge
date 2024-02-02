@@ -1,0 +1,145 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #fff;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    background-color: #42A7A1;
+    border-radius: 8px;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.report{
+    background-color: white;
+    width: 280px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.report__header{
+    background-color: #F1BA64;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 0px 1rem;
+}
+
+.header__right {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.header__left h1, .header__right p {
+    font-size: .85rem;
+    font-weight: bold;
+}
+
+.header__left p, .header__right span {
+    font-size: .75rem;
+}
+
+.header__right span {
+    text-align: left;
+}
+
+.header__left h1, .header__right span  {
+    margin-bottom: .25rem;
+}
+
+.report__content{
+    height: 70%;
+    padding: .5rem 1rem 1rem 1rem;
+}
+
+.content__legend{
+    height: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.legend {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.form{
+    width: 10px;
+    height: 3px;
+    border-radius: 20px;
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.legend__text{
+    font-size: .58rem;
+    margin-left: .5rem;
+    color: #6d6d6d;
+}
+
+.content__graphic{
+    width: 100%;
+    height: 80%;
+}
+
+.graphic_line{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(228, 228, 228);
+}
+
+.line1, .line2{
+    margin-bottom: 18%;
+} 
+
+
+.days{
+    display: flex;
+    font-size: 0.53rem;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: .8rem;
+    color: rgb(172, 172, 172);
+
+    
+}
