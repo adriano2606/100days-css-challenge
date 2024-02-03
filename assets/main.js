@@ -1,5 +1,5 @@
 
-let totalProjects = 4;
+let totalProjects = 5;
 let appSection = document.getElementById('app')
 
 function contaProjeto(){
