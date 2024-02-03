@@ -110,7 +110,7 @@
 
 .content__graphic{
     width: 100%;
-    height: 80%;
+    position: relative;
 }
 
 .graphic_line{
@@ -119,7 +119,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    
+
 }
 
 .line{
@@ -140,6 +140,136 @@
     justify-content: space-between;
     margin-top: .8rem;
     color: rgb(172, 172, 172);
+}
 
-    
+svg  {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.redpoly{
+    stroke: red;
+}
+
+.bluepoly{
+    stroke: blue;
+}
+
+.redcircle{
+    background-color: red;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.bluecircle{
+    background-color: blue;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.tolltip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .6rem;
+    width: 22px;
+    height: 13px;
+    position: relative;
+    border-radius: 3px;
+    color: white;
+    visibility: hidden;
+}
+
+.bluecircle > .tolltip{
+    background-color: blue;
+}
+
+.redcircle > .tolltip{
+    background-color: red;
+}
+
+.red__points .point-1{
+    top: 50px;
+    left: -1px;
+    position: relative;
+}
+
+.red__points > [class^=point]:hover .tolltip{
+    transform: translateY(-150%) translateX(-30%);
+    visibility: visible;
+}
+
+.blue__points > [class^=point]:hover .tolltip{
+    transform: translateY(-150%) translateX(-30%);
+    visibility: visible;
+}
+
+.red__points .point-2{
+    top: 7px;
+    left: 42px;
+}
+
+.red__points .point-3{
+    top: 16px;
+    left: 88px;
+}
+
+.red__points .point-4{
+    top: 5px;
+    left: 122px;
+}
+
+.red__points .point-5{
+    top: 42px;
+    left: 158px;
+}
+
+.red__points .point-6{
+    top: 52px;
+    left: 196px;
+}
+
+.red__points .point-7{
+    top: 23px;
+    left: 241px;
+}
+
+.blue__points .point-1{
+    top: 70px;
+    left: -1px;
+}
+
+.blue__points .point-2{
+    top: 52px;
+    left: 42px;
+}
+
+.blue__points .point-3{
+    top: 66px;
+    left: 88px;
+}
+
+.blue__points .point-4{
+    top: 57px;
+    left: 122px;
+}
+
+.blue__points .point-5{
+    top: 64px;
+    left: 158px;
+}
+
+.blue__points .point-6{
+    top: 71px;
+    left: 196px;
+}
+
+.blue__points .point-7{
+    top: 57px;
+    left: 241px;
 }
