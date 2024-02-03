@@ -179,10 +179,28 @@ svg  {
     font-size: .6rem;
     width: 22px;
     height: 13px;
-    position: relative;
+    position: absolute;
     border-radius: 3px;
     color: white;
     visibility: hidden;
+
+}
+
+.tolltip::after{
+    content: " ";
+    position: absolute;
+    border-width: 5px;
+    border-style: solid;
+    transform: rotate(180deg);
+    top: 90%;
+}
+
+.redcircle .tolltip::after{
+    border-color: transparent transparent red transparent;
+}
+
+.bluecircle .tolltip::after{
+    border-color: transparent transparent blue transparent;
 }
 
 .bluecircle > .tolltip{
